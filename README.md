@@ -1,1 +1,1 @@
-<a src="resposta1"> oi </a>
+<a href="resposta1.html"> oi </a>
