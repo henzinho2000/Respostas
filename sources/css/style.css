@@ -59,7 +59,7 @@ p:hover,h1:hover{
 
 #play-pause{
     font-size: 4vw;
-    color: rgb(250, 179, 252);
+    color: rgb(255, 114, 192);
     background-color: #00000000;
     border: none;
     text-shadow: 0 0 0  #fcbaff;
@@ -90,11 +90,15 @@ p:hover,h1:hover{
     flex-direction: column;
     width: 65vw;
     text-align: justify;
+    background-color: #150a3f70;
+    border-radius: 5vw;
+    padding: 3vw;
+    backdrop-filter: blur(10px);
 }
 
 .bubbles{
     position: absolute;
-    top: 0;
+    top: -1vw;
     display: flex;
 }
 .bubbles span{
@@ -113,6 +117,8 @@ p:hover,h1:hover{
     background: rgb(247, 73, 128);
     box-shadow: 0 0 2vw .1vw rgb(255, 155, 213);
 }
+
+
 
 @keyframes anim{
     0%{
@@ -166,9 +172,11 @@ p:hover,h1:hover{
     }
     #play-pause{
         border-radius: 100%;
-        color: rgba(255, 79, 240, 0.533);
         font-size: 10vw;
         backdrop-filter: blur(4px);
+    }
+    .texto{
+        backdrop-filter: none;
     }
 }
 @media only screen and (max-width: 500px){
@@ -197,5 +205,8 @@ p:hover,h1:hover{
     }
     #play-pause{
         font-size: 15vw;
+    }
+    .texto{
+        padding: 6vw;
     }
 }
